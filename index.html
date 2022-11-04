@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="app.js" defer ></script> --> <!-- defer чтобы не выдавало ошибку -->
+    <title>lesson1</title>
+</head>
+<body>
+   <!--  <script>
+        alert('Привет мир');
+        document.querySelector('h1').style.color = 'red';
+    </script> -->
+    <script>
+        var val1 = 12; //устаревшее, не используем
+        let var2 = 13; 
+        const var3 = 14;
+    </script>
+    <script>
+        /* вывод информации */
+       /*  alert(val1);
+        console.log(val2);
+        console.log(val3); */
+
+       /* получение информации */
+       /* val2 = prompt('Введите что-нибудь');
+       console.log(val2); */
+
+       if(true) {
+            var test1 = '1';
+            let test2 = '2';
+       }
+       console.log(test1);
+     /*   console.log(test2); */
+
+       /* типы данных JS */
+       /* 1.Number - любые числа */
+       let num1 = 13.42;
+       console.log(typeof num1);
+
+       /* 2.String - любые символы (строки) */
+       let str1 = `adadsd${num1}hsdsdusoi`;
+       console.log(str1);
+       console.log(typeof str1);
+
+       /* 3.Boolean - логический тип */
+       let bul1 = true;
+       console.log(typeof bul1);
+
+       /* 4.Undefined - неопределённое значение */
+       let test3;
+       console.log(typeof test3);
+
+       /* 5.Null - отсутствие значения */
+       let test5 = null;
+       console.log(test5);
+
+       /* Преобразование типов */
+      /*  let userValue1 = prompt('Введите число 1:');
+       let userValue2 = prompt('Введите число 2:');
+       console.log(`Cумма чисел: ${userValue1 + userValue2}`); */
+
+       /* 3 способа привести строку к числу */
+       /* 1. Number() */
+       let test11 = '1'; //1
+       test11 = Number(test11);
+       console.log(typeof test11);
+
+       let test12 = '1';
+       test12 = +test12; //унарный плюс
+       console.log(typeof test12);
+
+       let test13 = '12px';
+       test13 = parseInt(test13); //метод parseInt или parseFloat
+       /* console.log(typeof test13); */
+       console.log(test13);
+
+
+       /* Число к строке */
+       /*1. обычная конкатенация */
+       let num3 = 12;
+       num3 = num3 + '';
+       console.log(typeof num3);
+
+        /* 2.toString() */
+        let num4 = 42;
+        num4 = num4.toString();
+        console.log(typeof num4);
+
+        /* Арифметика   + - * / % **    */
+
+        console.log(2 ** 3);
+
+        /* Методы объекта Math(): */
+        let test17 = 2;
+
+        test17 += 2;
+
+       test18 = -3;
+       test18 = Math.abs(test18);
+       console.log(test18);
+
+       /* случайное число */
+       console.log(Math.trunc(Math.random() * 10) + 1); //от 1 до 10
+
+        /* Math.round() - округление по правилам математики */
+        
+       
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>
